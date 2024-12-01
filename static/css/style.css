@@ -43,3 +43,11 @@ pre {
 .calkit-dim {
 	background-color: #A0AEC0 !important;
 }
+
+.btn-large {
+	border-radius: 8px;
+}
+
+.mr15 {
+	margin-right: 10px;
+}
