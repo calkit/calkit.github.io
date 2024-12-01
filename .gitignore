@@ -2,3 +2,9 @@
 Gemfile.lock
 dist
 node_modules
+_site
+.sass-cache
+_drafts
+*.xcf
+.jekyll-cache
+*.DS_Store
