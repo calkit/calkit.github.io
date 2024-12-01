@@ -11,10 +11,11 @@ layout: base
         .row.center
             h5.header.col.s12.light A lightweight framework for reproducible research
             p
-                | Include everything in your project: Code, data, environments,
+                | Put everything in one place: Code, data, environments,
                 | figures, publications, and more, to maximize efficiency and impact.
         .row.center
-            a#download-button.btn-large.waves-effect.waves-light.orange(href='http://jekyll-pug.dougie.io/docs') Get Started
+            a#download-button.btn-large.waves-effect.waves-light.orange.mr15(href='https://docs.calkit.org') View the docs
+            a#download-button.btn-large.waves-effect.waves-light.orange(href='https://calkit.io', target='_blank') Login to calkit.io
         br
         br
 .container
@@ -44,21 +45,21 @@ layout: base
                         | We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.
 
 
-.container#blog_roll
-    style.
-        #red_header {
-            text-align: center;
-            box-sizing: border-box;
-            padding: 20px;
-        }
-    h2.white-text.light-blue.lighten-1.z-depth-2#red_header Blog posts
-    .row
-        | {% for post in site.posts %}
-        .col.s12.m6
-            .card.white
-                .card-content
-                    span.card-title {{post.title}}
-                    p {{post.excerpt}}
-                .card-action
-                    a(href='{{post.url}}') Read More
-        | {% endfor %}
+//- .container#blog_roll
+//-     style.
+//-         #red_header {
+//-             text-align: center;
+//-             box-sizing: border-box;
+//-             padding: 20px;
+//-         }
+//-     h2.white-text.light-blue.lighten-1.z-depth-2#red_header Blog posts
+//-     .row
+//-         | {% for post in site.posts %}
+//-         .col.s12.m6
+//-             .card.white
+//-                 .card-content
+//-                     span.card-title {{post.title}}
+//-                     p {{post.excerpt}}
+//-                 .card-action
+//-                     a(href='{{post.url}}') Read More
+//-         | {% endfor %}
