@@ -6,48 +6,57 @@
  * Made By MaterializeCSS.com
  */
 
-#view_source{
-	position: fixed;
-	z-index: 999;
-	right: 15px;
-	bottom: 15px
+#view_source {
+  position: fixed;
+  z-index: 999;
+  right: 15px;
+  bottom: 15px;
 }
 
 .icon-block {
   padding: 0 15px;
 }
 .icon-block .material-icons {
-	font-size: inherit;
+  font-size: inherit;
 }
 
 pre {
-	box-sizing: border-box;
-	padding: 20px;
-	background: white;
-	-webkit-box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14),0 1px 18px 0 rgba(0,0,0,0.12),0 3px 5px -1px rgba(0,0,0,0.3);
-	box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14),0 1px 18px 0 rgba(0,0,0,0.12),0 3px 5px -1px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  padding: 20px;
+  background: white;
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+    0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
+    0 3px 5px -1px rgba(0, 0, 0, 0.3);
 }
 
 .calkit-green {
-	background-color: #009688 !important;
+  background-color: #009688 !important;
 }
 
 .calkit-dark {
-	background-color: #1A202C !important;
+  background-color: #1a202c !important;
 }
 
 .calkit-dark-slate {
-	background-color: #252D3D !important;
+  background-color: #252d3d !important;
 }
 
 .calkit-dim {
-	background-color: #A0AEC0 !important;
+  background-color: #a0aec0 !important;
 }
 
 .btn-large {
-	border-radius: 8px;
+  border-radius: 8px;
 }
 
 .mr15 {
-	margin-right: 10px;
+  margin-right: 10px;
+}
+
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
