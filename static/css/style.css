@@ -50,6 +50,15 @@ pre {
   border-radius: 8px;
 }
 
+.btn-small {
+  border-radius: 6px;
+}
+
+.rtl {
+  direction: rtl;
+  margin-right: 30px;
+}
+
 .mr15 {
   margin-right: 10px;
 }
