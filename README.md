@@ -7,5 +7,5 @@ Jekyll theme.
 ## Local development
 
 1. Clone this repository.
-2. `cd` into the cloned repository and run the command `bundle`.
-3. Run the command `jekyll serve`.
+2. `cd` into the cloned repository and run the command
+   `bundle exec jekyll serve`.
