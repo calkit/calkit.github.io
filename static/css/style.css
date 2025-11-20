@@ -5,9 +5,9 @@
   --bg: #ffffff;
   --surface: #ffffff;
   --muted: #f5f7fb;
-  --text: #1f2937;
+  --text: #374151;
   --subtle: #6b7280;
-  --brand: #009688;
+  --brand: #009485;
   --accent: #61afef;
   --green: #98c379;
   --yellow: #e5c07b;
@@ -20,9 +20,9 @@ html[data-theme='dark'] {
   --bg: #282c34;
   --surface: #2c313a;
   --muted: #23272e;
-  --text: #abb2bf;
+  --text: #cfd8e3;
   --subtle: #7f848b;
-  --brand: #2aa198; /* softer green for dark */
+  --brand: #009485; /* FastAPI teal for dark too */
   --accent: #61afef;
   --green: #98c379;
   --yellow: #d19a66;
