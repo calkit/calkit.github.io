@@ -35,6 +35,22 @@ html[data-theme='dark'] {
 html, body {
   background: var(--bg);
   color: var(--text);
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1 0 auto;
+}
+
+.page-footer {
+  flex-shrink: 0;
+  margin-top: auto;
 }
 
 #view_source {
