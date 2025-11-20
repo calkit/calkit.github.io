@@ -1,10 +1,41 @@
 /* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+/* Theme variables inspired by Atom One Dark / Chakra UI dark scheme */
+:root {
+  /* Light theme (defaults) */
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --muted: #f5f7fb;
+  --text: #1f2937;
+  --subtle: #6b7280;
+  --brand: #009688;
+  --accent: #61afef;
+  --green: #98c379;
+  --yellow: #e5c07b;
+  --red: #e06c75;
+  --code-bg: #f6f8fa;
+  --shadow: 0 6px 10px rgba(0,0,0,0.08), 0 1px 18px rgba(0,0,0,0.06), 0 3px 5px -1px rgba(0,0,0,0.08);
+}
+
+html[data-theme='dark'] {
+  --bg: #282c34;
+  --surface: #2c313a;
+  --muted: #23272e;
+  --text: #abb2bf;
+  --subtle: #7f848b;
+  --brand: #2aa198; /* softer green for dark */
+  --accent: #61afef;
+  --green: #98c379;
+  --yellow: #d19a66;
+  --red: #e06c75;
+  --code-bg: #21252b;
+  --shadow: 0 6px 10px rgba(0,0,0,0.5), 0 1px 18px rgba(0,0,0,0.45), 0 3px 5px -1px rgba(0,0,0,0.6);
+}
+
+/* Base page colors */
+html, body {
+  background: var(--bg);
+  color: var(--text);
+}
 
 #view_source {
   position: fixed;
@@ -18,24 +49,24 @@
 }
 .icon-block .material-icons {
   font-size: inherit;
+  color: var(--accent);
 }
 
 pre {
   box-sizing: border-box;
   padding: 20px;
-  background: white;
-  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
-    0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
-    0 3px 5px -1px rgba(0, 0, 0, 0.3);
+  background: var(--code-bg);
+  -webkit-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
+  color: var(--text);
 }
 
 .calkit-green {
-  background-color: #009688 !important;
+  background-color: var(--brand) !important;
 }
 
 .calkit-dark {
-  background-color: #1a202c !important;
+  background-color: var(--surface) !important;
 }
 
 .calkit-dark-slate {
@@ -43,7 +74,7 @@ pre {
 }
 
 .calkit-dim {
-  background-color: #a0aec0 !important;
+  background-color: var(--muted) !important;
 }
 
 .btn-large {
@@ -62,3 +93,16 @@ pre {
 .mr15 {
   margin-right: 10px;
 }
+
+/* Links and headings */
+a { color: var(--accent); }
+h1,h2,h3,h4,h5 { color: var(--text); }
+.light { color: var(--subtle); }
+
+/* Footer overrides to look good on dark */
+.page-footer {
+  background: var(--brand);
+}
+
+/* Utility to invert simple white-text class used in templates */
+.white-text { color: #fff !important; }
